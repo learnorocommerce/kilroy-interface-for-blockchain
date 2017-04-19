@@ -1,0 +1,12 @@
+applications:
+- path: .
+  memory: 128M
+  instances: 1
+  domain: mybluemix.net
+  name: Go Interface for blockchain
+  host: go-interface-for-blockchain
+  disk_quota: 1024M
+  services:
+  - Blockchain-em
+  - Cloudant NoSQL DB-h7
+  buildpack: https://github.com/cloudfoundry/go-buildpack
